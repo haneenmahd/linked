@@ -52,7 +52,7 @@ export const SoftShadowCss = css<HeaderAvatarProps>`
 
 export const SoftShadowCssAnim = keyframes`
   50% {
-    box-shadow: 0 10px 40px 0 #b4b4b4;
+    box-shadow: 0 10px 40px 0 #b4b4b480;
   }
 
   80% {
