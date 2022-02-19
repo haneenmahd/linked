@@ -1,11 +1,10 @@
 {
     "avatarOptions": {
         "title": "Haneen Mahdin",
-        "description": "An aspiring full-stack developer and a UI/UX Designer",
-        "avatarImageSource": "./assets/png/sample-image.png"
+        "description": "An aspiring full-stack developer and a UI/UX Designer"
     },
     "stylingOptions": {
-        "shadowType": 0,
+        "shadowType": 3,
         "isShadowAnimated": true
     },
     "links": [

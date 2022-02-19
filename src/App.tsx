@@ -1,14 +1,18 @@
 import './App.css'
-import { Header } from './components/Header';
+import { AvatarShadowType, Header } from './components/Header';
 import { Links } from "./components/Links";
 import Config from "./data/config.json";
+import AvatarImage from "./assets/png/avatar.png";
 
 function App() {
   return (
     <div className="App">
       <Header
-        avatarOptions={Config.avatarOptions}
-
+        avatarOptions={{
+          title: Config.avatarOptions.title,
+          description: Config.avatarOptions.description,
+          avatarImageSource: AvatarImage
+        }}
         stylingOptions={Config.stylingOptions}
       />
 
