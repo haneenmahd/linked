@@ -11,7 +11,8 @@ export function Links(props: LinksProps) {
             <Link 
                 href={link.linkUrl} 
                 target="_blank"
-                key={index}>
+                colorSet={link.colorSet!}
+                key={link.linkUrl}>
                     {link.placeholder}
             </Link>
         ))}

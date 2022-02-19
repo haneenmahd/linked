@@ -1,6 +1,7 @@
 import './App.css'
 import { Header } from './components/Header';
 import { Links } from "./components/Links";
+import { LinkTheme } from './components/Links';
 import SampleAvatar from "./assets/png/sample-avatar.png";
 
 function App() {
@@ -18,15 +19,27 @@ function App() {
         links={[
           {
             linkUrl: "https://haneenmahd.github.io",
-            placeholder: "Website",
+            placeholder: "Portfolio ✨",
           },
           {
             linkUrl: "https://github.com/haneenmahd",
             placeholder: "GitHub",
+            colorSet: LinkTheme.GITHUB_THEME,
           },
           {
             linkUrl: "https://dribbble.com/haneenmahdin",
             placeholder: "Dribble",
+            colorSet: LinkTheme.DRIBBLE_THEME,
+          },
+          {
+            linkUrl: "https://instagram.com/haneenmahdin",
+            placeholder: "Instagram",
+            colorSet: LinkTheme.INSTAGRAM_THEME,
+          },
+          {
+            linkUrl: "https://instagram.com/haneenmahdin",
+            placeholder: "Lol",
+            colorSet: LinkTheme.PORTFOLIO_THEME,
           },
         ]}
       />

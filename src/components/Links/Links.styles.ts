@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import { LinkProps, LinkTheme } from "./Links.types";
+import styled, { css } from "styled-components";
 import Theme from "../../theme/theme";
 
 export const LinksContainer = styled.main`
@@ -9,7 +10,7 @@ export const LinksContainer = styled.main`
   padding: 0 30px;
 `;
 
-export const Link = styled.a`
+export const Link = styled.a<LinkProps>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,7 +20,6 @@ export const Link = styled.a`
   width: 90%;
   border-radius: 8px;
   font-weight: 600;
-  color: aliceblue;
   background-color: #fff;
   color: ${Theme.text.defaultColor};
   box-shadow: 0 20px 40px 0 #c4c4c440;
@@ -32,4 +32,40 @@ export const Link = styled.a`
   @media screen and (min-width: 700px) {
     width: 600px;
   }
+
+  ${(p) => {
+    switch (p.colorSet) {
+      case LinkTheme.GITHUB_THEME:
+        return LinkGithubTheme;
+
+      case LinkTheme.DRIBBLE_THEME:
+        return LinkDribbleTheme;
+
+      case LinkTheme.INSTAGRAM_THEME:
+        return LinkInstagramTheme;
+
+      case LinkTheme.PORTFOLIO_THEME:
+        return LinkPortfolioTheme;
+    }
+  }}
+`;
+
+export const LinkGithubTheme = css`
+  background-color: rgb(13, 17, 23);
+  color: #f5f5f5;
+`;
+
+export const LinkDribbleTheme = css`
+  background-color: #ea4c89;
+  color: #f5f5f5;
+`;
+
+export const LinkInstagramTheme = css`
+  background-color: #5545d9;
+  color: #f5f5f5;
+`;
+
+export const LinkPortfolioTheme = css`
+  color: #222;
+  border: 2px solid #222;
 `;
