@@ -1,0 +1,10 @@
+{
+  "name": "linked-binary",
+  "version": "1.0.0",
+  "description": "Binary files for CLI of linked",
+  "main": "dist/linked.js",
+  "repository": "https://github.com/haneenmahd/linked.git",
+  "author": "Haneen Mahdin<haneenmahdin@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
