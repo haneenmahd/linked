@@ -16,5 +16,6 @@ export enum AvatarShadowType {
 
 export interface HeaderAvatarProps {
   shadowType?: AvatarShadowType;
+  /** Sets if the shadow needs to be animated like a wave */
   isShadowAnimated?: boolean; // NOTE: reflection will not be animated
 }

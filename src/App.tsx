@@ -37,8 +37,8 @@ function App() {
             colorSet: LinkTheme.INSTAGRAM_THEME,
           },
           {
-            linkUrl: "https://instagram.com/haneenmahdin",
-            placeholder: "Lol",
+            linkUrl: "mailto:admin@example.com",
+            placeholder: "Mail me ✉️",
             colorSet: LinkTheme.PORTFOLIO_THEME,
           },
         ]}
