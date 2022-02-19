@@ -8,6 +8,7 @@ export const LinksContainer = styled.main`
   flex-direction: column;
   width: 100%;
   padding: 0 30px;
+  padding-bottom: 10%;
 `;
 
 export const Link = styled.a<LinkProps>`
