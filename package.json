@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "installer": "typeinstall"
+    "installer": "typeinstall",
+    "configure": "sh configure.sh"
   },
   "dependencies": {
     "react": "^17.0.2",

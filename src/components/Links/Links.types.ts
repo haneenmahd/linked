@@ -18,7 +18,7 @@ export interface LinkProps {
 
 export enum LinkTheme {
     GITHUB_THEME,
-    DRIBBLE_THEME,
+    DRIBBBLE_THEME,
     PORTFOLIO_THEME,
     INSTAGRAM_THEME,
 }
