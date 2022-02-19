@@ -15,7 +15,7 @@ export const Link = styled.a`
   justify-content: center;
   text-decoration: none;
   margin: 10px 0;
-  height: 40px;
+  height: 50px;
   width: 90%;
   border-radius: 8px;
   font-weight: 600;
@@ -27,5 +27,9 @@ export const Link = styled.a`
 
   :hover {
     transform: scale(1.05);
+  }
+
+  @media screen and (min-width: 700px) {
+    width: 600px;
   }
 `;

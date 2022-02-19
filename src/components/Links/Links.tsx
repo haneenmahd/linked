@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from './Links.styles';
 import { LinksContainer } from './Links.styles'
 import { LinksProps } from "./Links.types"
