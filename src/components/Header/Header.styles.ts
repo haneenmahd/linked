@@ -10,6 +10,7 @@ export const HeaderContainer = styled.header`
   -ms-flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 10%;
 `;
 
 export const HeaderAvatar = styled.img.attrs({
@@ -107,7 +108,7 @@ export const ReflectionCss = css<HeaderAvatarProps>`
 `;
 
 export const HeaderContent = styled.div`
-  padding: 20px 50px;
+  padding: 20px 10%;
 
   * {
     margin: 10px 0;
@@ -120,5 +121,6 @@ export const HeaderContent = styled.div`
 
   p {
     color: ${Theme.text.lightColor};
+    font-weight: 500;
   }
 `;
