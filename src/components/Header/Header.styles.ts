@@ -1,4 +1,5 @@
 import styled, { css, keyframes } from "styled-components";
+import Theme from "../../theme/theme";
 import { AvatarShadowType, HeaderAvatarProps } from "./Header.types";
 
 export const HeaderContainer = styled.header`
@@ -103,4 +104,21 @@ export const GreenGradientShadowCssAnim = keyframes`
 export const ReflectionCss = css<HeaderAvatarProps>`
   -webkit-box-reflect: below 0
     linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.08));
+`;
+
+export const HeaderContent = styled.div`
+  padding: 20px 50px;
+
+  * {
+    margin: 10px 0;
+  }
+
+  h1 {
+    color: ${Theme.text.defaultColor};
+    font-size: 120%;
+  }
+
+  p {
+    color: ${Theme.text.lightColor};
+  }
 `;
