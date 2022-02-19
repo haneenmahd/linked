@@ -1,5 +1,5 @@
 import './App.css'
-import { Header } from './components/Header';
+import { AvatarShadowType, Header } from './components/Header';
 import { Links } from "./components/Links";
 import { LinkTheme } from './components/Links';
 import SampleAvatar from "./assets/png/sample-avatar.png";
@@ -12,6 +12,11 @@ function App() {
           title: "Haneen Mahdin",
           description: "An aspiring full-stack developer and a UI/UX Designer",
           avatarImageSource: SampleAvatar,
+        }}
+
+        stylingOptions={{
+          shadowType: AvatarShadowType.USE_DEFAULT_SHADOW,
+          isShadowAnimated: true
         }}
       />
 
