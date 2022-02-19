@@ -11,6 +11,7 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: center;
   padding-top: 10%;
+  padding-bottom: 5%;
 `;
 
 export const HeaderAvatar = styled.img.attrs({
