@@ -1,20 +1,18 @@
 import { HeaderAvatar, HeaderContainer, HeaderContent } from "./Header.styles";
-import { AvatarShadowType } from "./Header.types";
-import SampleAvatar from "../../assets/png/sample-avatar.png";
+import { HeaderProps } from "./Header.types";
 
-export function Header() {
+export function Header(props: HeaderProps) {
   return (
     <HeaderContainer>
       <HeaderAvatar
-        src={SampleAvatar}
-        shadowType={AvatarShadowType.USE_DEFAULT_SHADOW}
-        isShadowAnimated
+        src={props.avatarOptions.avatarImageSource}
+        {...props.stylingOptions}
       />
 
       <HeaderContent>
-        <h1>Haneen Mahdin</h1>
+        <h1>{props.avatarOptions.title}</h1>
 
-        <p>An Aspiring Full-stack software developer and a UI/UX Designer</p>
+        <p>{props.avatarOptions.description}</p>
       </HeaderContent>
     </HeaderContainer>
   );
