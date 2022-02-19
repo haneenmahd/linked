@@ -6,9 +6,11 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "installer": "typeinstall"
+    "installer": "typeinstall",
+    "configure": "sh configure.sh"
   },
   "dependencies": {
+    "inquirer": "^8.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "styled-components": "^5.3.3"
