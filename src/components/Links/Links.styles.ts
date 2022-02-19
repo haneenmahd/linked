@@ -39,7 +39,7 @@ export const Link = styled.a<LinkProps>`
       case LinkTheme.GITHUB_THEME:
         return LinkGithubTheme;
 
-      case LinkTheme.DRIBBLE_THEME:
+      case LinkTheme.DRIBBBLE_THEME:
         return LinkDribbleTheme;
 
       case LinkTheme.INSTAGRAM_THEME:

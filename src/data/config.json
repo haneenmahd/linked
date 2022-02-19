@@ -1,37 +1,27 @@
 {
-    "avatarOptions": {
-        "title": "Haneen Mahdin",
-        "description": "An aspiring full-stack developer and a UI/UX Designer",
-        "avatarImageSource": "./assets/png/sample-image.png"
+  "avatarOptions": {
+    "title": "Haneen",
+    "description": "being so nice :D"
+  },
+  "stylingOptions": {
+    "shadowType": 3,
+    "isShadowAnimated": true
+  },
+  "links": [
+    {
+      "linkUrl": "https://github.com/haneenmahd",
+      "placeholder": "GitHub",
+      "colorSet": 0
     },
-    "stylingOptions": {
-        "shadowType": 0,
-        "isShadowAnimated": true
+    {
+      "linkUrl": "https://dribbble.com/haneenmahdin",
+      "placeholder": "Dribbble",
+      "colorSet": 1
     },
-    "links": [
-          {
-            "linkUrl": "https://haneenmahd.github.io",
-            "placeholder": "Portfolio ✨"
-          },
-          {
-            "linkUrl": "https://github.com/haneenmahd",
-            "placeholder": "GitHub",
-            "colorSet": 0
-          },
-          {
-            "linkUrl": "https://dribbble.com/haneenmahdin",
-            "placeholder": "Dribble",
-            "colorSet": 1
-          },
-          {
-            "linkUrl": "https://instagram.com/haneenmahdin",
-            "placeholder": "Instagram",
-            "colorSet": 3
-          },
-          {
-            "linkUrl": "mailto:admin@example.com",
-            "placeholder": "Mail me ✉️",
-            "colorSet": 2
-          }
-        ]
+    {
+      "linkUrl": "https://twitter.com/HaneenMahdin",
+      "placeholder": "Twitter",
+      "colorSet": 3
+    }
+  ]
 }
