@@ -9,8 +9,7 @@ export function Links(props: LinksProps) {
     <LinksContainer>
         {links.map((link, index) => (
             <Link 
-                href={link.linkUrl} 
-                target="_blank"
+                href={link.linkUrl}
                 colorSet={link.colorSet!}
                 key={index}>
                     {link.placeholder}
