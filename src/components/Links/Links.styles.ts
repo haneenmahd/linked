@@ -11,7 +11,7 @@ export const LinksContainer = styled.main`
   padding-bottom: 10%;
 `;
 
-export const Link = styled.a<LinkProps>`
+export const Link = styled.a.attrs({ target: "_blank" })<LinkProps>`
   display: flex;
   align-items: center;
   justify-content: center;
