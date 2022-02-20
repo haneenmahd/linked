@@ -25,7 +25,7 @@ yarn configure
 ## Enter your name and other more stuff
 ```
 
-Read [Configuring](https://github.com/haneenmahd/linked#configuring-) to know more about how-to configure your data.
+Read [Configuring](#configuring-) to know more about how-to configure your data.
 
 # Configuring 🛠
 
