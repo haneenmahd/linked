@@ -9,6 +9,7 @@ export type LinkConfig = {
   /** Generates a paypal link 💰 */
   payPalConfig?: {
     payPalUserName: string;
+    text?: string;
   };
 };
 

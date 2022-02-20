@@ -12,6 +12,7 @@ export function Links(props: LinksProps) {
             link.payPalConfig && (
               <PayPalLink
                 payPalUserName={link.payPalConfig.payPalUserName}
+                text={link.payPalConfig.text}
                 key={index} />
             ) || (<Link 
                 href={link.linkUrl}
