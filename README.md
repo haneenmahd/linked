@@ -38,7 +38,9 @@ After running `yarn configure`, you will be prompted by a set of questions. Well
 - Paypal Username: Share your Paypal username that will be used to display Paypal link
 
 ## Configuring using `src/data/config.json`
+
 Here is the sample json file
+
 ```json
 {
   "avatarOptions": {
@@ -83,12 +85,13 @@ Here is the sample json file
 - `avatarOptions` contains configurations about the page.
 
 - `stylingOptions` is used to style the avatar image.
-It accepts two objects
- - `shadowType`: a number representing a specific shadow type
-   - **0** - Uses reflection
-   - **1** - Uses violet gradient shadow
-   - **2** - Uses green gradient shadow
-   - **3** - Uses soft-shadow
+  It accepts two objects
+- `shadowType`: a number representing a specific shadow type
+
+  - **0** - Uses reflection
+  - **1** - Uses violet gradient shadow
+  - **2** - Uses green gradient shadow
+  - **3** - Uses soft-shadow
 
 - `links` object accepts a arrays of `LinkConfig` (configuration used to create links inside the website)
   - `link` object
@@ -100,6 +103,10 @@ It accepts two objects
       - **2** - Portfolio theme, an old-school design
       - **3** - Instagram theme, showcase instagram profile
       - **4** - Showcase twitter profile
+        If you want to provide paypal link inside this object, you can use these properties instead.
+      - **payPalConfig**: Configurations for PayPal link component
+        - **payPalUserName**: Your paypal user name
+        - **text**: Placeholder text of the link
 
 # Questions 🤔
 
