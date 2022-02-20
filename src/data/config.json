@@ -27,6 +27,11 @@
       "linkUrl": "mailto:haneenmahdin@gmail.com",
       "placeholder": "Mail me ✉️",
       "colorSet": 2
+    },
+    {
+      "payPalConfig": {
+        "payPalUserName": ""
+      }
     }
   ]
 }
