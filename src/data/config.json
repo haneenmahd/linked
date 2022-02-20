@@ -30,7 +30,8 @@
     },
     {
       "payPalConfig": {
-        "payPalUserName": ""
+        "payPalUserName": "",
+        "text": "Paypal me 💸"
       }
     }
   ]
