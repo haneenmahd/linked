@@ -46,31 +46,31 @@ Here is the sample json file
     "description": "Describe yourself :D"
   },
   "stylingOptions": {
-    "shadowType": 3, // soft-shadow
-    "isShadowAnimated": true // animates the shadow
+    "shadowType": 3,
+    "isShadowAnimated": true
   },
   "links": [
     {
-      "linkUrl": "https://github.com/haneenmahd", // url
+      "linkUrl": "https://github.com/haneenmahd",
       "placeholder": "GitHub",
-      "colorSet": 0 // github link theme
+      "colorSet": 0
     },
     {
       "linkUrl": "https://dribbble.com/haneenmahdin",
       "placeholder": "Dribbble",
-      "colorSet": 1 // dribble link theme
+      "colorSet": 1
     },
     {
       "linkUrl": "https://twitter.com/HaneenMahdin",
       "placeholder": "Twitter",
-      "colorSet": 4 // twitter link theme
+      "colorSet": 4
     },
     {
       "linkUrl": "mailto:haneenmahdin@gmail.com",
       "placeholder": "Mail me ✉️",
-      "colorSet": 2 // portfolio link theme
+      "colorSet": 2
     },
-    { // automatically uses paypal link theme
+    {
       "payPalConfig": {
         "payPalUserName": "",
         "text": "Paypal me 💸"
@@ -78,9 +78,28 @@ Here is the sample json file
     }
   ]
 }
-
 ```
 
+- `avatarOptions` contains configurations about the page.
+
+- `stylingOptions` is used to style the avatar image.
+It accepts two objects
+ - `shadowType`: a number representing a specific shadow type
+   - **0** - Uses reflection
+   - **1** - Uses violet gradient shadow
+   - **2** - Uses green gradient shadow
+   - **3** - Uses soft-shadow
+
+- `links` object accepts a arrays of `LinkConfig` (configuration used to create links inside the website)
+  - `link` object
+    - `linkUrl`: url to a specific link
+    - `placeholder`: placeholder text
+    - `colorSet`: link's background and foreground theme
+      - **0**: GitHub theme, used specifically to showcase GitHub portfolio.
+      - **1** - Dribbble theme, used to showcase dribbble portfolio
+      - **2** - Portfolio theme, an old-school design
+      - **3** - Instagram theme, showcase instagram profile
+      - **4** - Showcase twitter profile
 
 # Questions 🤔
 
