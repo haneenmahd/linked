@@ -13,7 +13,7 @@ export interface LinksProps {
 }
 
 export interface LinkProps {
-    colorSet: LinkTheme;
+    colorSet?: LinkTheme;
 }
 
 export enum LinkTheme {
