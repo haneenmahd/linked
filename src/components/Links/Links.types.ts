@@ -6,6 +6,10 @@ export type LinkConfig = {
   iconOptions?: {
     iconSource: string;
   };
+  /** Generates a paypal link 💰 */
+  payPalConfig?: {
+    payPalUserName: string;
+  };
 };
 
 export interface LinksProps {
