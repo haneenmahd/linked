@@ -22,6 +22,11 @@
       "linkUrl": "https://twitter.com/HaneenMahdin",
       "placeholder": "Twitter",
       "colorSet": 4
+    },
+    {
+      "linkUrl": "mailto:haneenmahdin@gmail.com",
+      "placeholder": "Mail me ✉️",
+      "colorSet": 2
     }
   ]
 }
