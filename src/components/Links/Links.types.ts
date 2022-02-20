@@ -21,4 +21,5 @@ export enum LinkTheme {
     DRIBBBLE_THEME,
     PORTFOLIO_THEME,
     INSTAGRAM_THEME,
+    TWITTER_THEME,
 }

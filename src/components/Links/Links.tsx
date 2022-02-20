@@ -12,7 +12,7 @@ export function Links(props: LinksProps) {
                 href={link.linkUrl} 
                 target="_blank"
                 colorSet={link.colorSet!}
-                key={link.linkUrl}>
+                key={index}>
                     {link.placeholder}
             </Link>
         ))}

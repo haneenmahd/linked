@@ -47,6 +47,9 @@ export const Link = styled.a<LinkProps>`
 
       case LinkTheme.PORTFOLIO_THEME:
         return LinkPortfolioTheme;
+      
+      case LinkTheme.TWITTER_THEME:
+        return LinkTwitterTheme;
     }
   }}
 `;
@@ -69,4 +72,9 @@ export const LinkInstagramTheme = css`
 export const LinkPortfolioTheme = css`
   color: #222;
   border: 2px solid #222;
+`;
+
+export const LinkTwitterTheme = css`
+  background-color: rgb(29, 155, 240);
+  color: #f5f5f5;
 `;
