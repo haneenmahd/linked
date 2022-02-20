@@ -11,7 +11,7 @@ export const LinksContainer = styled.main`
   padding-bottom: 10%;
 `;
 
-export const Link = styled.a<LinkProps>`
+export const DefaultLinkStyle = css`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,7 +24,7 @@ export const Link = styled.a<LinkProps>`
   background-color: #fff;
   color: ${Theme.text.defaultColor};
   box-shadow: 0 20px 40px 0 #c4c4c440;
-  transition: .2s cubic-bezier(0, 0.2, 0.5, 3);
+  transition: 0.2s cubic-bezier(0, 0.2, 0.5, 3);
 
   :hover {
     transform: scale(1.05);
@@ -33,6 +33,10 @@ export const Link = styled.a<LinkProps>`
   @media screen and (min-width: 700px) {
     width: 600px;
   }
+`;
+
+export const Link = styled.a.attrs({ target: "_blank" })<LinkProps>`
+  ${DefaultLinkStyle}
 
   ${(p) => {
     switch (p.colorSet) {

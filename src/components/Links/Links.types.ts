@@ -1,10 +1,15 @@
 export type LinkConfig = {
-  linkUrl: string;
-  placeholder: string;
+  linkUrl?: string;
+  placeholder?: string;
   useIcon?: boolean;
   colorSet?: LinkTheme;
   iconOptions?: {
     iconSource: string;
+  };
+  /** Generates a paypal link 💰 */
+  payPalConfig?: {
+    payPalUserName: string;
+    text?: string;
   };
 };
 
@@ -13,7 +18,7 @@ export interface LinksProps {
 }
 
 export interface LinkProps {
-    colorSet: LinkTheme;
+    colorSet?: LinkTheme;
 }
 
 export enum LinkTheme {
