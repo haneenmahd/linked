@@ -1,6 +1,6 @@
 export type LinkConfig = {
   linkUrl?: string;
-  placeholder: string;
+  placeholder?: string;
   useIcon?: boolean;
   colorSet?: LinkTheme;
   iconOptions?: {
