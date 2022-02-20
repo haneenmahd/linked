@@ -40,7 +40,10 @@ else
     ANIMATE_SHADOW="true"
 fi
 
-CONFIG_FILE_DATA="{\n\t\"avatarOptions\": {\n\t\t\"title\": \"$USER_NAME\",\n\t\t\"description\": \"$DESCRIPTION\"},\n\t\"stylingOptions\": {\n\t\t\"shadowType\": $SHADOW_TYPE,\n\t\t\"isShadowAnimated\": $ANIMATE_SHADOW\n\t},\n\t\"links\": []\n}"
+echo "Paypal Username 💸:"
+read PAYPAL_USERNAME
+
+CONFIG_FILE_DATA="{\n\t\"avatarOptions\": {\n\t\t\"title\": \"$USER_NAME\",\n\t\t\"description\": \"$DESCRIPTION\"},\n\t\"stylingOptions\": {\n\t\t\"shadowType\": $SHADOW_TYPE,\n\t\t\"isShadowAnimated\": $ANIMATE_SHADOW\n\t},\n\t\"links\": [{\n\t\t\"payPalConfig\": {\n\t\t\t\"payPalUserName\": \"$PAYPAL_USERNAME\",\n\t\t\t\"text\": \"Fund me 💸\"\n\t\t}\n\t}]\n}"
 
 rm -rf ./src/data/config.json
 echo $CONFIG_FILE_DATA > ./src/data/config.json
