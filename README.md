@@ -1,6 +1,6 @@
 # Linked
 
-A beautiful and simple template to store all your Links 🔗.
+A beautiful and simple template to display all your social links 🔗 but from a dev's perspective.
 
 <br />
 
